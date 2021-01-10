@@ -1,0 +1,29 @@
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <!-- Definition for textEditor bean -->
+   <bean id = "person" class = "com.springcore.model.Person">
+    
+      <property name = "name" value = "Aye Phyo Paing" />
+      <property name="phoneNo" value="09343434" />
+      <property name="nrc" value="10/w3434" />
+        <property name = "address" ref="add" />
+   </bean>
+
+   <!-- Definition for spellChecker bean -->
+   <bean id="add" class = "com.springcore.model.Address">
+   		<property name = "street" value = "Baho Road" />
+   		<property name = "buildingNo" value = "152" />
+   		<property name = "zipCode" value = "1078" />
+   </bean>
+   
+    <bean id="add2" class = "com.springcore.model.Address">
+   		<property name = "street" value = "Baho Road" />
+   		<property name = "buildingNo" value = "152" />
+   		<property name = "zipCode" value = "1078" />
+   </bean>
+  
+</beans>
